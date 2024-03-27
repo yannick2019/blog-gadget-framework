@@ -1,0 +1,3 @@
+fragment Filter($user: User, $session: Session) on User {
+  *
+}
