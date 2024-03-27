@@ -36,14 +36,15 @@ const CreatePostPage = () => {
 
       // Clear inputs
       setFile(null);
-      setTitle(null);
-      setBody(null);
-      setCategory(null);
+      setTitle("");
+      setBody("");
+      setCategory("");
   
       setSuccessMessage('Article posted successfully!');
       // Set timeout to clear success message after 3 seconds
       setTimeout(() => {
         setSuccessMessage('');
+        window.location.reload();
       }, 3000);
     } else {
       setErrors(validationErrors);
@@ -78,7 +79,7 @@ const CreatePostPage = () => {
   }, []);
 
   return user ? (
-    <div style={{ maxWidth: "720px" }}>
+    <div style={{ maxWidth: "720px", margin: "auto" }}>
       <h1 style={{ marginTop: "20px", marginBottom: "20px" }}>Create an article</h1>
       {error && <p class="error">Error: {error.message}</p>}
       {successMessage && !error && <div className="success-card">{successMessage}</div>}

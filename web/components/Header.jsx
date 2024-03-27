@@ -27,6 +27,9 @@ const Header = () => {
           </Link>
         </SignedOut>
         <SignedIn>
+          <Link to="/create-post" style={{ textDecoration: "none", color: "#2e86de" }}>
+            Create new article
+          </Link>
           <Link to="/signed-in" style={{ color: "black" }}>
             Home
           </Link>
