@@ -1,10 +1,15 @@
 import { api } from "../api";
 import { useFindMany } from "@gadgetinc/react";
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { BeatLoader } from "react-spinners";
 
 const CategoryPage = () => {
   let { categoryName } = useParams();
+
+  useEffect(() => {
+    document.title = `${categoryName} category | ${process.env.GADGET_PUBLIC_APP_SLUG}`;
+  }, [categoryName]);
 
   // Get all posts sort by category
   const [result, refresh] = useFindMany(api.post, {

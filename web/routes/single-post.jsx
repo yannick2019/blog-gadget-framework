@@ -1,11 +1,17 @@
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { api } from "../api";
 import { useFindOne, useFindFirst } from "@gadgetinc/react";
 import { BeatLoader } from "react-spinners";
 
 const SinglePostPage = () => {
   let { postId } = useParams();
+
   const [{ data: post, error, fetching }] = useFindOne(api.post, postId);
+
+  useEffect(() => {
+    document.title = `${post?.title} | ${process.env.GADGET_PUBLIC_APP_SLUG}`;
+  }, [post]);
 
   if (!post || fetching) return <div className="loader"><BeatLoader color="#2e86de" /></div>;
 
