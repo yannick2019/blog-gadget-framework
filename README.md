@@ -4,6 +4,8 @@ Simple blog application using Gadget Framework, a backend framework that offers 
 
 ## Preview
 
+![screen-shot](/web/assets/screen-shot.png)
+
 ## See it live
 
 ## Used Tech
