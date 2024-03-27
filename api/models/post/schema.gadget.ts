@@ -17,7 +17,7 @@ export const schema: GadgetModel = {
       type: "enum",
       acceptMultipleSelections: false,
       acceptUnlistedOptions: false,
-      options: ["Tech", "Finance", "Sport", "Health", "Events"],
+      options: ["Tech", "Finance", "Sport", "Health"],
       storageKey: "SRdVQKyZvBlB",
     },
     image: {

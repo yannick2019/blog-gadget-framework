@@ -18,7 +18,6 @@ const SinglePostPage = () => {
             <Link to={`/category/Finance`} className="category-link">Finance</Link>
             <Link to={`/category/Sport`} className="category-link">Sport</Link>
             <Link to={`/category/Health`} className="category-link">Health</Link>
-            <Link to={`/category/Events`} className="category-link">Events</Link>
           </div>
           <div className="single-post-main">
             <p style={{ color: "#2e86de" }}>{post.category}</p>

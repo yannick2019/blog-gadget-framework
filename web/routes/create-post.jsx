@@ -108,7 +108,6 @@ const CreatePostPage = () => {
             <option value="Finance">Finance</option>
             <option value="Sport">Sport</option>
             <option value="Health">Health</option>
-            <option value="Events">Events</option>
           </select>
           {errors.category && <p className="error">{errors.category}</p>}
         </div>

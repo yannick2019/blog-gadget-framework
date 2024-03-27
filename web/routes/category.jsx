@@ -24,7 +24,6 @@ const CategoryPage = () => {
         <Link to={`/category/Finance`} className="category-link">Finance</Link>
         <Link to={`/category/Sport`} className="category-link">Sport</Link>
         <Link to={`/category/Health`} className="category-link">Health</Link>
-        <Link to={`/category/Events`} className="category-link">Events</Link>
       </div>
       <div className="category-main">
         <h1 className="category-heading">{categoryName}</h1>
