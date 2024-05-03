@@ -7,6 +7,7 @@ Simple blog application using Gadget Framework, a backend framework that offers 
 ![screen-shot](/web/assets/screen-shot.png)
 
 ## See it live
+Click [here](https://koniya-blog--development.gadget.app/)
 
 ## Used Tech
 
